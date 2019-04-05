@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+  {% block style %}{% endblock style %}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark fixed-top navbar-dark">
+  <a class="navbar-brand" href="#" style="font-size: 30px;color: #56973C;font-weight: bold;"><b style="font-family: 'Pacifico', cursive;"><i style="color: #fff">Re</i>kindle</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    {% if user.is_authenticated %}
+  
+    <ul class="navbar-nav ml-auto">
+       <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#team">Team</a>
+      </li>  
+      <li class="nav-item">
+        Hi {{ user.username }}!
+      </li>
+      <li class="nav-item">
+      <a href="{% url 'logout' %}" style="color: #fff">logout</a>
+      </li>
+      {% else %}
+          <li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li>  
+       <li class="nav-item">
+        <a class="nav-link" href="/signup/">SignUp</a>
+      </li>
+    </ul>
+    {% endif %}
+  </div>  
+</nav> 
+
+{% block content %}{% endblock content %}
+</body>
+</html>

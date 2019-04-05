@@ -1,0 +1,262 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" media="screen" href="{% static 'css/base1.css' %}">
+
+ 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  
+  <script src="{% static 'js/typed.js' %}"></script>
+   
+        <script src="{% static 'js/particles.min.js' %}"></script>
+        <script>
+        particlesJS.load('particles-js', "{% static 'js/assets/particles.json' %}", function() {
+  console.log('callback - particles.js config loaded');
+});
+        </script>
+   
+	  
+</head>
+<body>
+ 
+<div id="particles-js">
+  <div class="particle_content">
+
+
+<div id="intro-text">
+<div id="typed-strings" >
+			<p>If you want to achieve greatness stop asking for permission</p>
+			<p>To live a creative life, we must lose our fear of being wrong. </p>
+			<p> No one can make you feel inferior without your consent.</p>
+</div>
+		<span id="typed"></span>
+</div>	
+  </div>
+</div>
+<br>
+<section id="about">
+<div class="container" >
+  <center style="color: #56973C;"><b style="font-size: 50px;">Welcome To ReKindle:</b></center><br>
+  <div class="row" style="padding: 0px;margin: 0px;">
+    <div class="col"><i class="fas fa-comments" style="color: #56973C;font-size: 30px;"></i><b style="font-size: 30px;">Direct Interaction</b>
+      <p style="font-family: 'Ubuntu', sans-serif;">Unique platform which directly connect the homemakers with the government officials and they can become trailblazers in the field of entrepreneurship.</p></div>
+    <div class="col"><i class="fas fa-recycle" style="color: #56973C;font-size: 30px;"></i>
+
+<b style="font-size: 30px;">Create Awareness</b>
+<p style="font-family: 'Ubuntu', sans-serif;">
+Make lead of women in the field of entrepreneurship by using their homemade recipies and it will create awareness among them.
+</p></div>
+  </div><br>
+   
+    <div><center><i class="fas fa-stethoscope" style="color: #56973C;font-size: 30px;"></i><b style="font-size: 30px;">Best Solutions:</b></center><p style="font-family: 'Ubuntu', sans-serif;" >The homemakers will become aware with the upcoming policies of the government which will help them to kick start their business.We deals with strengthening the homemakers by providing them a platform in which they can post their idea and can interact with the government officials.
+      
+</p></div>
+  </div>
+</div>
+</section>
+<section style=" padding-top: 20px;style="margin-top: 30px";>
+  <div class="container" >
+  <h1 style="color:green"> "Some Famous Entrepreneurs Of India" </h1><br/><br/>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width:300px;height: 370px;">
+    <img class="card-img-top" src="{% static 'images/k.jpg' %}" alt="Card image" style="height: 200px; width: 300px;">
+    <div class="container" style="color:#000">
+        <h2>Kiran Mazumdar Shaw</h2>
+        <p class="title">Chairperson & MD</p>
+        <p>Biocon Ltd</p>
+        
+        
+      </div>
+  </div>
+  <br>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width:300px;height: 370px;">
+    <img class="card-img-top" src="{% static 'images/su.jpg' %}" alt="Card image" style="height: 200px; width: 300px;">
+    <div class="container">
+        <h2>Suchi Mukherjee</h2>
+        <p class="title">Founder</p>
+        <p>LimeRoad</p>
+        
+        
+      </div></div>
+  <br>
+    </div>
+  <div class="col-md-4">
+  <div class="card" style="width:300px;height: 370px;">
+    <img class="card-img-top" src="{% static 'images/n.jpg' %}" alt="Card image" style="height: 200px; width: 300px;">
+<div class="container">
+        <h2>Naina Lal Kidwai</h2>
+        <p class="title">President</p>
+        <p>FICCI</p>
+        
+  
+      </div>
+  </div>
+  <br/></div></div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width:300px;height: 370px;">
+    <img class="card-img-top" src="{% static 'images/Divyajain.jpg' %}" alt="Card image" style="height: 200px; width: 300px;">
+    <div class="container" style="color:#000">
+        <h2>Divya Jain</h2>
+        <p class="title">Chairperson & MD</p>
+        <p>Dloop</p>
+        
+        
+      </div>
+  </div>
+  <br>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width:300px;height: 370px;">
+    <img class="card-img-top" src="{% static 'images/Roshninadar.jpg' %}" alt="Card image" style="height: 200px; width: 300px;">
+    <div class="container">
+        <h2>Roshni Nadar</h2>
+        <p class="title">Founder</p>
+        <p>LimeRoad</p>
+        
+        ￼
+Naina
+      </div></div>
+  <br>
+    </div>
+  <div class="col-md-4">
+  <div class="card" style="width:300px;height: 370px;">
+    <img class="card-img-top" src="{% static 'images/Arunajayanthi.jpeg' %}" alt="Card image" style="height: 200px; width: 300px;">
+<div class="container">
+        <h2>Aruna Jayanthi</h2>
+        <p class="title">CEO</p>
+        <p>Capgemini</p>
+        
+  
+      </div>
+  </div>
+  <br/></div></div>
+    </div>
+  
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon" "></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+  
+</div>
+</section>
+
+
+<footer style="background-color: #000;color: #fff">
+
+ <hr>
+  <div class="row" style="margin: 0px;">
+    <div class="col">
+         <h6 style="color: green;font-size: 30px;"><b style="font-family: 'Pacifico', cursive;"><i style="color: #fff">Re</i>kindle</b></h6>
+                <p>An easy way <br/>to find out the <br/>solution.</p>
+              </div>
+     <!--  <div class="col-md-2" style="">                           
+    <ul style="color:white;">
+    <h5><li>Terms & Condition</li></h5>
+    <h5><li>Contact</li></h5>
+        <h5><li>Help</li></h5></ul>
+</div> -->
+
+      <div class="col">
+        <i class="fab fa-instagram" style="font-size: 50px; padding-top: 35px;"></i>
+
+
+
+      </div>
+    <div class="col">
+       <i class="fab fa-linkedin-in" style="font-size: 50px; padding-top: 35px;"></i>
+
+
+</div>
+   <div class="col">
+       <i class="fab fa-twitter"  style="font-size: 50px; padding-top: 35px;"></i>
+
+
+</div>
+<div class="col"> <p> <i class="fa fa-home mr-3"></i> ABC Enginnering College, Delhi</p>
+            <p>
+            <i class="fa fa-envelope mr-3"></i> abc@gmail.com</p>
+          <p>
+            <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+    </div>
+  </footer>
+
+        
+        
+        </footer>
+      </section>
+
+<script>
+
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+	loop: true,
+	 typeSpeed: 30,
+	 backDelay: 900,
+	   backSpeed: 30,
+  });
+
+</script>
+ <script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+</body>
+</html>
+{% endblock content %}
